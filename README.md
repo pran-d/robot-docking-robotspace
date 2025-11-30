@@ -58,10 +58,11 @@ Alternatively, you can run them separately:
 ### 1. State Estimation & Sensor Fusion
 - **Extended Kalman Filter (EKF)**: Integrate the `robot_localization` package to fuse wheel odometry with visual pose estimates from the ArUco detector. This would provide a continuous and robust state estimate (`odom` -> `base_link` tf) even when the marker is temporarily occluded or detection is noisy. It is also possible to implement better ArUco detection logics which would be robust to different conditions.
 
-### 2. Finite State Machine
+### 2. Motion planning, Finite State Machine
 - The `docking_node` logic can be upgraded into a full state machine, which could follow some steps such as:
     - Search Strategy: A pre-defined search pattern when the marker is not visible.
     - Normal Approach: Planning in such a way that the robot docks exactly perpendicular to the AruCo marker.
+    - Collision avoidance strategies in the planning algorithm
 
 ### 3. **Multi-Marker SLAM**: 
 - I would have to implement handling the detection of multiple ArUco markers. With this, one can perform SLAM (Simultaneous Localization and Mapping) as well, allowing the robot to localize itself globally in the map frame rather than just relative to a single dock.
