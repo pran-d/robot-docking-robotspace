@@ -4,7 +4,7 @@
   <name>my_bot</name>
   <version>0.0.0</version>
   <description>TODO: Package description</description>
-  <maintainer email="go35xuw@mytum.de">pranav</maintainer>
+  <maintainer email="ed21b046@smail.iitm.ac.in">pranav</maintainer>
   <license>TODO: License declaration</license>
 
   <depend>rclpy</depend>
