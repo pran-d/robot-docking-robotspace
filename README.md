@@ -1,4 +1,4 @@
-# Autonomous Docking Using ArUco Markers in ROS2 Jazzy
+# Docking Using ArUco Markers in ROS2 Jazzy
 
 ## Overview
 This project implements an autonomous docking system for a differential drive robot using ArUco markers in ROS2 Jazzy and Gazebo Sim (gz-sim).
